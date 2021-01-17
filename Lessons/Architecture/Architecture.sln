@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modularity", "Architecture\Modularity.csproj", "{4E3F4FCB-C3C0-443B-A648-3F8D879BBF98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E3F4FCB-C3C0-443B-A648-3F8D879BBF98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E3F4FCB-C3C0-443B-A648-3F8D879BBF98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E3F4FCB-C3C0-443B-A648-3F8D879BBF98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E3F4FCB-C3C0-443B-A648-3F8D879BBF98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {450A02A2-7CDE-4F33-9F36-D90F639C204E}
+	EndGlobalSection
+EndGlobal
