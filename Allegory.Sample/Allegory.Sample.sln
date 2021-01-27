@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allegory.Sample.Domain.Shar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allegory.Sample.Domain", "Allegory.Sample.Domain\Allegory.Sample.Domain.csproj", "{10A582DD-D68E-4FCC-9229-65C9360743AF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{63951F71-D17B-4534-AB2C-22031DF3F0DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F2F45267-CC25-429D-90C4-C69C950C9EBB} = {63951F71-D17B-4534-AB2C-22031DF3F0DF}
+		{10A582DD-D68E-4FCC-9229-65C9360743AF} = {63951F71-D17B-4534-AB2C-22031DF3F0DF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {075107E9-1085-45A3-8F25-2BCF57B59577}
