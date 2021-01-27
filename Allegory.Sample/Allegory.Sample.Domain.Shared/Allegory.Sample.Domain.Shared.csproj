@@ -5,4 +5,8 @@
     <RootNamespace>Allegory.Sample</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Localization.Abstractions" Version="4.1.2" />
+  </ItemGroup>
+
 </Project>
