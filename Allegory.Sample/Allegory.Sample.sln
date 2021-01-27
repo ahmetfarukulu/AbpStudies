@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allegory.Sample.Domain.Shared", "Allegory.Sample.Domain.Shared\Allegory.Sample.Domain.Shared.csproj", "{F2F45267-CC25-429D-90C4-C69C950C9EBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2F45267-CC25-429D-90C4-C69C950C9EBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2F45267-CC25-429D-90C4-C69C950C9EBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2F45267-CC25-429D-90C4-C69C950C9EBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2F45267-CC25-429D-90C4-C69C950C9EBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {075107E9-1085-45A3-8F25-2BCF57B59577}
+	EndGlobalSection
+EndGlobal
