@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allegory.Sample.Domain.Shared", "Allegory.Sample.Domain.Shared\Allegory.Sample.Domain.Shared.csproj", "{F2F45267-CC25-429D-90C4-C69C950C9EBB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allegory.Sample.Domain", "Allegory.Sample.Domain\Allegory.Sample.Domain.csproj", "{10A582DD-D68E-4FCC-9229-65C9360743AF}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{63951F71-D17B-4534-AB2C-22031DF3F0DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allegory.Sample.Domain.Shared", "src\Allegory.Sample.Domain.Shared\Allegory.Sample.Domain.Shared.csproj", "{AF536FF6-987C-495C-A4AE-88B1D05D3B11}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allegory.Sample.Domain", "src\Allegory.Sample.Domain\Allegory.Sample.Domain.csproj", "{E566817F-16A5-46CD-A2F6-8BCAA7EEF02E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allegory.Sample.EntityFrameworkCore", "src\Allegory.Sample.EntityFrameworkCore\Allegory.Sample.EntityFrameworkCore.csproj", "{2C1C62DD-87D6-41B9-9626-7A583E54B886}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,21 +17,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F2F45267-CC25-429D-90C4-C69C950C9EBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F2F45267-CC25-429D-90C4-C69C950C9EBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F2F45267-CC25-429D-90C4-C69C950C9EBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F2F45267-CC25-429D-90C4-C69C950C9EBB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{10A582DD-D68E-4FCC-9229-65C9360743AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{10A582DD-D68E-4FCC-9229-65C9360743AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{10A582DD-D68E-4FCC-9229-65C9360743AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{10A582DD-D68E-4FCC-9229-65C9360743AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF536FF6-987C-495C-A4AE-88B1D05D3B11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF536FF6-987C-495C-A4AE-88B1D05D3B11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF536FF6-987C-495C-A4AE-88B1D05D3B11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF536FF6-987C-495C-A4AE-88B1D05D3B11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E566817F-16A5-46CD-A2F6-8BCAA7EEF02E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E566817F-16A5-46CD-A2F6-8BCAA7EEF02E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E566817F-16A5-46CD-A2F6-8BCAA7EEF02E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E566817F-16A5-46CD-A2F6-8BCAA7EEF02E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C1C62DD-87D6-41B9-9626-7A583E54B886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C1C62DD-87D6-41B9-9626-7A583E54B886}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C1C62DD-87D6-41B9-9626-7A583E54B886}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C1C62DD-87D6-41B9-9626-7A583E54B886}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{F2F45267-CC25-429D-90C4-C69C950C9EBB} = {63951F71-D17B-4534-AB2C-22031DF3F0DF}
-		{10A582DD-D68E-4FCC-9229-65C9360743AF} = {63951F71-D17B-4534-AB2C-22031DF3F0DF}
+		{AF536FF6-987C-495C-A4AE-88B1D05D3B11} = {63951F71-D17B-4534-AB2C-22031DF3F0DF}
+		{E566817F-16A5-46CD-A2F6-8BCAA7EEF02E} = {63951F71-D17B-4534-AB2C-22031DF3F0DF}
+		{2C1C62DD-87D6-41B9-9626-7A583E54B886} = {63951F71-D17B-4534-AB2C-22031DF3F0DF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {075107E9-1085-45A3-8F25-2BCF57B59577}
