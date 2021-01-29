@@ -16,8 +16,4 @@
     <ProjectReference Include="..\Allegory.Sample.EntityFrameworkCore\Allegory.Sample.EntityFrameworkCore.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="EntityFrameworkCore\" />
-  </ItemGroup>
-
 </Project>
