@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allegory.Sample.Domain", "s
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allegory.Sample.EntityFrameworkCore", "src\Allegory.Sample.EntityFrameworkCore\Allegory.Sample.EntityFrameworkCore.csproj", "{2C1C62DD-87D6-41B9-9626-7A583E54B886}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allegory.Sample.EntityFrameworkCore.DbMigrations", "src\Allegory.Sample.EntityFrameworkCore.DbMigrations\Allegory.Sample.EntityFrameworkCore.DbMigrations.csproj", "{2CC15F68-7C59-4037-AE8E-EBE1DCD289DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{2C1C62DD-87D6-41B9-9626-7A583E54B886}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C1C62DD-87D6-41B9-9626-7A583E54B886}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C1C62DD-87D6-41B9-9626-7A583E54B886}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CC15F68-7C59-4037-AE8E-EBE1DCD289DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CC15F68-7C59-4037-AE8E-EBE1DCD289DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CC15F68-7C59-4037-AE8E-EBE1DCD289DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CC15F68-7C59-4037-AE8E-EBE1DCD289DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +43,7 @@ Global
 		{AF536FF6-987C-495C-A4AE-88B1D05D3B11} = {63951F71-D17B-4534-AB2C-22031DF3F0DF}
 		{E566817F-16A5-46CD-A2F6-8BCAA7EEF02E} = {63951F71-D17B-4534-AB2C-22031DF3F0DF}
 		{2C1C62DD-87D6-41B9-9626-7A583E54B886} = {63951F71-D17B-4534-AB2C-22031DF3F0DF}
+		{2CC15F68-7C59-4037-AE8E-EBE1DCD289DF} = {63951F71-D17B-4534-AB2C-22031DF3F0DF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {075107E9-1085-45A3-8F25-2BCF57B59577}
