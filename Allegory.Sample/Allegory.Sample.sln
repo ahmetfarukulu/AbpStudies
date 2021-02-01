@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allegory.Sample.Domain", "s
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allegory.Sample.EntityFrameworkCore", "src\Allegory.Sample.EntityFrameworkCore\Allegory.Sample.EntityFrameworkCore.csproj", "{2C1C62DD-87D6-41B9-9626-7A583E54B886}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allegory.Sample.EntityFrameworkCore.DbMigrations", "src\Allegory.Sample.EntityFrameworkCore.DbMigrations\Allegory.Sample.EntityFrameworkCore.DbMigrations.csproj", "{2CC15F68-7C59-4037-AE8E-EBE1DCD289DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allegory.Sample.EntityFrameworkCore.DbMigrations", "src\Allegory.Sample.EntityFrameworkCore.DbMigrations\Allegory.Sample.EntityFrameworkCore.DbMigrations.csproj", "{2CC15F68-7C59-4037-AE8E-EBE1DCD289DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allegory.Sample.DbMigrator", "src\Allegory.Sample.DbMigrator\Allegory.Sample.DbMigrator.csproj", "{3C6CD688-E6AB-4743-A732-B33701E0F17B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allegory.Sample.DbMigrator", "src\Allegory.Sample.DbMigrator\Allegory.Sample.DbMigrator.csproj", "{3C6CD688-E6AB-4743-A732-B33701E0F17B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allegory.Sample.Application.Contracts", "src\Allegory.Sample.Application.Contracts\Allegory.Sample.Application.Contracts.csproj", "{AF1819B8-EE66-4FD8-A5B4-354102294E1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{3C6CD688-E6AB-4743-A732-B33701E0F17B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C6CD688-E6AB-4743-A732-B33701E0F17B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C6CD688-E6AB-4743-A732-B33701E0F17B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF1819B8-EE66-4FD8-A5B4-354102294E1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF1819B8-EE66-4FD8-A5B4-354102294E1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF1819B8-EE66-4FD8-A5B4-354102294E1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF1819B8-EE66-4FD8-A5B4-354102294E1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +57,7 @@ Global
 		{2C1C62DD-87D6-41B9-9626-7A583E54B886} = {63951F71-D17B-4534-AB2C-22031DF3F0DF}
 		{2CC15F68-7C59-4037-AE8E-EBE1DCD289DF} = {63951F71-D17B-4534-AB2C-22031DF3F0DF}
 		{3C6CD688-E6AB-4743-A732-B33701E0F17B} = {63951F71-D17B-4534-AB2C-22031DF3F0DF}
+		{AF1819B8-EE66-4FD8-A5B4-354102294E1D} = {63951F71-D17B-4534-AB2C-22031DF3F0DF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {075107E9-1085-45A3-8F25-2BCF57B59577}

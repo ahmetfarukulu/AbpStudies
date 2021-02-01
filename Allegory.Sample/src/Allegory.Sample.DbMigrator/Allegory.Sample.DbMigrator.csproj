@@ -26,6 +26,7 @@
 	</ItemGroup>
 	
 	<ItemGroup>
+    <ProjectReference Include="..\Allegory.Sample.Application.Contracts\Allegory.Sample.Application.Contracts.csproj" />
     <ProjectReference Include="..\Allegory.Sample.EntityFrameworkCore.DbMigrations\Allegory.Sample.EntityFrameworkCore.DbMigrations.csproj" />
   </ItemGroup>
 

@@ -7,8 +7,8 @@ namespace Allegory.Sample.DbMigrator
 {
     [DependsOn(
         typeof(AbpAutofacModule),
-        typeof(SampleEntityFrameworkCoreDbMigrationsModule)
-        //typeof(SampleApplicationContractsModule) => Create AppContract project
+        typeof(SampleEntityFrameworkCoreDbMigrationsModule),
+        typeof(SampleApplicationContractsModule) 
         )]
     public class SampleDbMigratorModule : AbpModule
     {
