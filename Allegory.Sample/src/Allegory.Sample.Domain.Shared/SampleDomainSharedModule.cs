@@ -43,14 +43,14 @@ namespace Allegory.Sample
                 options.Resources
                     .Add<SampleResource>("en")
                     .AddBaseTypes(typeof(AbpValidationResource))
-                    .AddVirtualJson("/Localization/BookStore");
+                    .AddVirtualJson("/Localization/Sample");
 
                 options.DefaultResourceType = typeof(SampleResource);
             });
 
             Configure<AbpExceptionLocalizationOptions>(options =>
             {
-                options.MapCodeNamespace("BookStore", typeof(SampleResource));
+                options.MapCodeNamespace("Sample", typeof(SampleResource));
             });
         }
     }
