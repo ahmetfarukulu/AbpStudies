@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<RootNamespace>Allegory.Sample</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Allegory.Sample.Application.Contracts\Allegory.Sample.Application.Contracts.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Account.HttpApi.Client" Version="4.2.0" />
+		<PackageReference Include="Volo.Abp.Identity.HttpApi.Client" Version="4.2.0" />
+		<PackageReference Include="Volo.Abp.PermissionManagement.HttpApi.Client" Version="4.2.0" />
+		<PackageReference Include="Volo.Abp.TenantManagement.HttpApi.Client" Version="4.2.0" />
+		<PackageReference Include="Volo.Abp.FeatureManagement.HttpApi.Client" Version="4.2.0" />
+	</ItemGroup>
+
+</Project>
