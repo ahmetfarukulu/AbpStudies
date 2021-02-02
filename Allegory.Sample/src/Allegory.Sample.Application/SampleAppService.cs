@@ -3,7 +3,7 @@ using Volo.Abp.Application.Services;
 
 namespace Allegory.Sample
 {
-    public class SampleAppService : ApplicationService
+    public abstract class SampleAppService : ApplicationService
     {
         protected SampleAppService()
         {
