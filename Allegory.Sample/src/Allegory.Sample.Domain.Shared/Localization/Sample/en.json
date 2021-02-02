@@ -1,6 +1,7 @@
 {
   "culture": "en",
   "texts": {
-
+    "Menu:Home": "Homepage",
+    "Menu:Sample": "Sample menu"
   }
 }
