@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allegory.Sample.HttpApi", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allegory.Sample.HttpApi.Client", "src\Allegory.Sample.HttpApi.Client\Allegory.Sample.HttpApi.Client.csproj", "{837C5834-14A2-488D-ACDC-F1445083BE1E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allegory.Sample.Web", "src\Allegory.Sample.Web\Allegory.Sample.Web.csproj", "{DEC7BFB7-6C75-46EE-8FA2-FA8D5C7FCABE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,10 @@ Global
 		{837C5834-14A2-488D-ACDC-F1445083BE1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{837C5834-14A2-488D-ACDC-F1445083BE1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{837C5834-14A2-488D-ACDC-F1445083BE1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEC7BFB7-6C75-46EE-8FA2-FA8D5C7FCABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEC7BFB7-6C75-46EE-8FA2-FA8D5C7FCABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEC7BFB7-6C75-46EE-8FA2-FA8D5C7FCABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEC7BFB7-6C75-46EE-8FA2-FA8D5C7FCABE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,6 +85,7 @@ Global
 		{51C4D65F-F677-42AF-AD73-2BEAFE1DA0F7} = {63951F71-D17B-4534-AB2C-22031DF3F0DF}
 		{13BB009B-C7BE-416A-B3EB-30661E14FE98} = {63951F71-D17B-4534-AB2C-22031DF3F0DF}
 		{837C5834-14A2-488D-ACDC-F1445083BE1E} = {63951F71-D17B-4534-AB2C-22031DF3F0DF}
+		{DEC7BFB7-6C75-46EE-8FA2-FA8D5C7FCABE} = {63951F71-D17B-4534-AB2C-22031DF3F0DF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {075107E9-1085-45A3-8F25-2BCF57B59577}
