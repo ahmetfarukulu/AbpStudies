@@ -1,4 +1,5 @@
-﻿using Allegory.Sample.Users;
+﻿using Allegory.Sample.Products;
+using Allegory.Sample.Users;
 using Microsoft.EntityFrameworkCore;
 using Volo.Abp.Data;
 using Volo.Abp.EntityFrameworkCore;
@@ -11,6 +12,9 @@ namespace Allegory.Sample.EntityFrameworkCore
     [ConnectionStringName("Default")]
     public class SampleDbContext : AbpDbContext<SampleDbContext>
     {
+        public DbSet<AppUser> Users { get; set; }
+        public DbSet<Product> Products { get; set; }
+
         public SampleDbContext(DbContextOptions<SampleDbContext> options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder builder)
