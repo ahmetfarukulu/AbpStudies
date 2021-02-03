@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -16,9 +16,5 @@
 		<PackageReference Include="Volo.Abp.PermissionManagement.Application.Contracts" Version="4.2.0" />
 		<PackageReference Include="Volo.Abp.TenantManagement.Application.Contracts" Version="4.2.0" />
 		<PackageReference Include="Volo.Abp.FeatureManagement.Application.Contracts" Version="4.2.0" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Products\" />
 	</ItemGroup>
 </Project>
