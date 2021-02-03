@@ -2,6 +2,10 @@
   "culture": "tr",
   "texts": {
     "Menu:Home": "Ana sayfa",
-    "Menu:Sample": "Örnek menü"
+    "Menu:Sample": "Örnek menü",
+    "Permission:Products": "Ürün yönetimi",
+    "Permission:Products.Create": "Yeni ürünler oluþturma",
+    "Permission:Products.Edit": "Ürünleri düzenleme",
+    "Permission:Products.Delete": "Ürünleri silme"
   }
 }
