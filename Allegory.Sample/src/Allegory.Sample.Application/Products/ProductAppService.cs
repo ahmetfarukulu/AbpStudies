@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Dynamic.Core;
 using System.Threading.Tasks;
+using Allegory.Sample.Permissions;
+using Microsoft.AspNetCore.Authorization;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
 using Volo.Abp.Domain.Repositories;
 
 namespace Allegory.Sample.Products
 {
+    [Authorize(SamplePermissions.Products.Default)]
     public class ProductAppService : ApplicationService, IProductAppService
     {
         private readonly ProductManager _productManager;
@@ -55,6 +58,7 @@ namespace Allegory.Sample.Products
            );
         }
 
+        [Authorize(SamplePermissions.Products.Create)]
         public async Task<ProductDto> CreateAsync(CreateProductDto input)
         {
             var product = await _productManager.CreateAsync(input.Code, input.Name);
@@ -64,6 +68,7 @@ namespace Allegory.Sample.Products
             return ObjectMapper.Map<Product, ProductDto>(product);
         }
 
+        [Authorize(SamplePermissions.Products.Edit)]
         public async Task UpdateAsync(Guid id, UpdateProductDto input)
         {
             var product = await _productRepository.GetAsync(id);
@@ -78,6 +83,7 @@ namespace Allegory.Sample.Products
             await _productRepository.UpdateAsync(product);
         }
 
+        [Authorize(SamplePermissions.Products.Delete)]
         public async Task DeleteAsync(Guid id)
         {
             await _productRepository.DeleteAsync(id);
