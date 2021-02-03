@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using Allegory.Sample.Products;
+using AutoMapper;
 
 namespace Allegory.Sample
 {
@@ -6,7 +7,7 @@ namespace Allegory.Sample
     {
         public SampleApplicationAutoMapperProfile()
         {
-            //mappings here
+            CreateMap<Product, ProductDto>();
         }
     }
 }
