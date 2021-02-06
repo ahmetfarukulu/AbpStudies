@@ -5,12 +5,14 @@ using System.Linq.Dynamic.Core;
 using System.Threading.Tasks;
 using Allegory.Sample.Permissions;
 using Microsoft.AspNetCore.Authorization;
+using Volo.Abp;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
 using Volo.Abp.Domain.Repositories;
 
 namespace Allegory.Sample.Products
 {
+    [RemoteService(false)]
     [Authorize(SamplePermissions.Products.Default)]
     public class ProductAppService : ApplicationService, IProductAppService
     {

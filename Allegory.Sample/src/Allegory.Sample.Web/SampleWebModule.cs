@@ -161,7 +161,10 @@ namespace Allegory.Sample.Web
         {
             Configure<AbpAspNetCoreMvcOptions>(options =>
             {
-                options.ConventionalControllers.Create(typeof(SampleApplicationModule).Assembly);
+                options.ConventionalControllers.Create(typeof(SampleApplicationModule).Assembly,controllerOptions=> 
+                {
+                    controllerOptions.RootPath = "sample";
+                });
             });
         }
         private void ConfigureSwaggerServices(IServiceCollection services)
