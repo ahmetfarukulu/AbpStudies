@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Dynamic.Core;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Allegory.Sample.Permissions;
+using Allegory.Standart.Filter.Concrete;
 using Microsoft.AspNetCore.Authorization;
 using Volo.Abp;
 using Volo.Abp.Application.Dtos;
@@ -56,6 +58,18 @@ namespace Allegory.Sample.Products
 
             return new PagedResultDto<ProductDto>(
                totalCount,
+               ObjectMapper.Map<List<Product>, List<ProductDto>>(products)
+           );
+        }
+        public async Task<List<ProductDto>> GetListByConditionAsync(Condition condition)
+        {
+            var queryable = await _productRepository.GetQueryableAsync();
+
+            var query = queryable.Where(condition.GetLambdaExpression<Product>());
+
+            var products = await AsyncExecuter.ToListAsync(query);
+
+            return new List<ProductDto>(
                ObjectMapper.Map<List<Product>, List<ProductDto>>(products)
            );
         }

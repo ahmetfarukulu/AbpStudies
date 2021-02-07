@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Allegory.Sample.Products;
+using Allegory.Standart.Filter.Concrete;
 using Microsoft.AspNetCore.Mvc;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.AspNetCore.Mvc;
@@ -9,7 +11,7 @@ namespace Allegory.Sample.Controllers
 {
     [ControllerName("Product")]
     [Route("api/sample/products")]
-    public class ProductController : AbpController//, IProductAppService
+    public class ProductController : AbpController, IProductAppService
     {
         protected IProductAppService ProductAppService { get; }
 
@@ -24,6 +26,10 @@ namespace Allegory.Sample.Controllers
 
         [HttpGet]
         public Task<PagedResultDto<ProductDto>> GetListAsync(GetProductListDto input) => ProductAppService.GetListAsync(input);
+
+        [HttpPost]
+        [Route("by-condition")]
+        public Task<List<ProductDto>> GetListByConditionAsync(Condition condition) => ProductAppService.GetListByConditionAsync(condition);
 
         [HttpPost]
         public Task<ProductDto> CreateAsync(CreateProductDto input) => ProductAppService.CreateAsync(input);

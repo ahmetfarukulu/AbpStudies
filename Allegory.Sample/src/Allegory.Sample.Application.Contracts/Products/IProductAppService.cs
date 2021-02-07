@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Allegory.Standart.Filter.Concrete;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
 
@@ -13,6 +14,8 @@ namespace Allegory.Sample.Products
         Task<ProductDto> GetAsync(Guid id);
 
         Task<PagedResultDto<ProductDto>> GetListAsync(GetProductListDto input);
+
+        Task<List<ProductDto>> GetListByConditionAsync(Condition condition);
 
         Task<ProductDto> CreateAsync(CreateProductDto input);
 

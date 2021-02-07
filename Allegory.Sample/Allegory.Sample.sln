@@ -17,13 +17,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allegory.Sample.DbMigrator"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allegory.Sample.Application.Contracts", "src\Allegory.Sample.Application.Contracts\Allegory.Sample.Application.Contracts.csproj", "{AF1819B8-EE66-4FD8-A5B4-354102294E1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allegory.Sample.Application", "src\Allegory.Sample.Application\Allegory.Sample.Application.csproj", "{51C4D65F-F677-42AF-AD73-2BEAFE1DA0F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allegory.Sample.Application", "src\Allegory.Sample.Application\Allegory.Sample.Application.csproj", "{51C4D65F-F677-42AF-AD73-2BEAFE1DA0F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allegory.Sample.HttpApi", "src\Allegory.Sample.HttpApi\Allegory.Sample.HttpApi.csproj", "{13BB009B-C7BE-416A-B3EB-30661E14FE98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allegory.Sample.HttpApi", "src\Allegory.Sample.HttpApi\Allegory.Sample.HttpApi.csproj", "{13BB009B-C7BE-416A-B3EB-30661E14FE98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allegory.Sample.HttpApi.Client", "src\Allegory.Sample.HttpApi.Client\Allegory.Sample.HttpApi.Client.csproj", "{837C5834-14A2-488D-ACDC-F1445083BE1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allegory.Sample.HttpApi.Client", "src\Allegory.Sample.HttpApi.Client\Allegory.Sample.HttpApi.Client.csproj", "{837C5834-14A2-488D-ACDC-F1445083BE1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allegory.Sample.Web", "src\Allegory.Sample.Web\Allegory.Sample.Web.csproj", "{DEC7BFB7-6C75-46EE-8FA2-FA8D5C7FCABE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allegory.Sample.Web", "src\Allegory.Sample.Web\Allegory.Sample.Web.csproj", "{DEC7BFB7-6C75-46EE-8FA2-FA8D5C7FCABE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
