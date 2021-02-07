@@ -17,6 +17,8 @@ namespace Allegory.Sample.Products
 
         Task<List<ProductDto>> GetListByConditionAsync(Condition condition);
 
+        Task<List<ProductDto>> GetListByDynamicLinqAsync(string predicate, params object[] args);
+
         Task<ProductDto> CreateAsync(CreateProductDto input);
 
         Task UpdateAsync(Guid id, UpdateProductDto input);

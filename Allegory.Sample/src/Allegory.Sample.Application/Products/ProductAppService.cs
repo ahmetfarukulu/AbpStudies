@@ -73,6 +73,18 @@ namespace Allegory.Sample.Products
                ObjectMapper.Map<List<Product>, List<ProductDto>>(products)
            );
         }
+        public async Task<List<ProductDto>> GetListByDynamicLinqAsync(string predicate, params object[] args)
+        {
+            var queryable = await _productRepository.GetQueryableAsync();
+
+            var query = queryable.Where(predicate, args);
+
+            var products = await AsyncExecuter.ToListAsync(query);
+
+            return new List<ProductDto>(
+               ObjectMapper.Map<List<Product>, List<ProductDto>>(products)
+           );
+        }
 
         [Authorize(SamplePermissions.Products.Create)]
         public async Task<ProductDto> CreateAsync(CreateProductDto input)
