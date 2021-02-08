@@ -6,6 +6,7 @@
     "Permission:Products": "Product Management",
     "Permission:Products.Create": "Creating new products",
     "Permission:Products.Edit": "Editing the products",
-    "Permission:Products.Delete": "Deleting the products"
+    "Permission:Products.Delete": "Deleting the products",
+    "Sample:00001": "There is already an product with the same code: {code}"
   }
 }

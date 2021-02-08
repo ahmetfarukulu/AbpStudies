@@ -6,24 +6,37 @@ using System.Threading.Tasks;
 using JetBrains.Annotations;
 using Microsoft.Extensions.Logging;
 using Volo.Abp;
+using Volo.Abp.Domain.Repositories;
 using Volo.Abp.Domain.Services;
 
 namespace Allegory.Sample.Products
 {
     public class ProductManager : DomainService
     {
-        public ProductManager()
-        {
+        private readonly IRepository<Product, Guid> _productRepository;
 
+        public ProductManager(IRepository<Product, Guid> productRepository)
+        {
+            _productRepository = productRepository;
         }
 
-        public async Task<Product> CreateAsync([NotNull] string code, [CanBeNull] string name=null)
+        public async Task<Product> CreateAsync([NotNull] string code, [CanBeNull] string name = null)
         {
+            var existingProduct = await _productRepository.FindAsync(p => p.Code == code);
+            if (existingProduct != null)
+            {
+                throw new ProductAlreadyExistsException(code);
+            }
+
             return new Product(GuidGenerator.Create(), code, name);
         }
-        public async Task ChangeCodeAsync([NotNull] Product product,[NotNull] string newCode)
+        public async Task ChangeCodeAsync([NotNull] Product product, [NotNull] string newCode)
         {
-            Check.NotNull(product, nameof(product));
+            var existingProduct = await _productRepository.FindAsync(p => p.Code == newCode);
+            if (existingProduct != null && existingProduct.Id != product.Id)
+            {
+                throw new ProductAlreadyExistsException(newCode);
+            }
 
             product.ChangeCode(newCode);
         }

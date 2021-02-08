@@ -6,6 +6,7 @@
     "Permission:Products": "Ürün yönetimi",
     "Permission:Products.Create": "Yeni ürünler oluþturma",
     "Permission:Products.Edit": "Ürünleri düzenleme",
-    "Permission:Products.Delete": "Ürünleri silme"
+    "Permission:Products.Delete": "Ürünleri silme",
+    "Sample:00001": "Bu kodlu ürün zaten ekli: {code}"
   }
 }

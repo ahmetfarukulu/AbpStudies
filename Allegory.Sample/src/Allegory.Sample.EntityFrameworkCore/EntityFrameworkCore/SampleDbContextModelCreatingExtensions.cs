@@ -21,7 +21,7 @@ namespace Allegory.Sample.EntityFrameworkCore
                           .IsRequired()
                           .HasMaxLength(ProductConsts.MaxCodeLength);
 
-                b.HasIndex(x => x.Code);
+                b.HasIndex(x => x.Code).IsUnique(true);
             });
         }
     }

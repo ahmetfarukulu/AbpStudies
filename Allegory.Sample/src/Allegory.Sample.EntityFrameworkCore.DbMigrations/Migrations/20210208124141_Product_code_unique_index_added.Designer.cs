@@ -4,15 +4,17 @@ using Allegory.Sample.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Volo.Abp.EntityFrameworkCore;
 
 namespace Allegory.Sample.Migrations
 {
     [DbContext(typeof(SampleMigrationsDbContext))]
-    partial class SampleMigrationsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210208124141_Product_code_unique_index_added")]
+    partial class Product_code_unique_index_added
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
