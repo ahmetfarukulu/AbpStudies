@@ -25,6 +25,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allegory.Sample.HttpApi.Cli
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allegory.Sample.Web", "src\Allegory.Sample.Web\Allegory.Sample.Web.csproj", "{DEC7BFB7-6C75-46EE-8FA2-FA8D5C7FCABE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{BFDAA5CB-AAC1-490A-864B-7D3036FCE979}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Allegory.Sample.TestBase", "test\Allegory.Sample.TestBase\Allegory.Sample.TestBase.csproj", "{4F013261-DE73-44CD-8CC6-87B5DA1A2C2B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +75,10 @@ Global
 		{DEC7BFB7-6C75-46EE-8FA2-FA8D5C7FCABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEC7BFB7-6C75-46EE-8FA2-FA8D5C7FCABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEC7BFB7-6C75-46EE-8FA2-FA8D5C7FCABE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F013261-DE73-44CD-8CC6-87B5DA1A2C2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F013261-DE73-44CD-8CC6-87B5DA1A2C2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F013261-DE73-44CD-8CC6-87B5DA1A2C2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F013261-DE73-44CD-8CC6-87B5DA1A2C2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +94,7 @@ Global
 		{13BB009B-C7BE-416A-B3EB-30661E14FE98} = {63951F71-D17B-4534-AB2C-22031DF3F0DF}
 		{837C5834-14A2-488D-ACDC-F1445083BE1E} = {63951F71-D17B-4534-AB2C-22031DF3F0DF}
 		{DEC7BFB7-6C75-46EE-8FA2-FA8D5C7FCABE} = {63951F71-D17B-4534-AB2C-22031DF3F0DF}
+		{4F013261-DE73-44CD-8CC6-87B5DA1A2C2B} = {BFDAA5CB-AAC1-490A-864B-7D3036FCE979}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {075107E9-1085-45A3-8F25-2BCF57B59577}
