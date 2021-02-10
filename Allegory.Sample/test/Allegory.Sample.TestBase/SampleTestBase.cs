@@ -8,7 +8,7 @@ using Volo.Abp.Uow;
 
 namespace Allegory.Sample
 {
-    public class SampleTestBase<TStartupModule> : AbpIntegratedTest<TStartupModule>
+    public abstract class SampleTestBase<TStartupModule> : AbpIntegratedTest<TStartupModule>
            where TStartupModule : IAbpModule
     {
         protected override void SetAbpApplicationCreationOptions(AbpApplicationCreationOptions options)
