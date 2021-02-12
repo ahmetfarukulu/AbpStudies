@@ -32,7 +32,7 @@ namespace Allegory.Sample.Samples
                 await _productManager.CreateAsync("P-1");
             });
 
-            exception.Code.ShouldBe(SampleDomianErrorCodes.ProductAlreadyExists);
+            exception.Code.ShouldBe(SampleDomainErrorCodes.ProductAlreadyExists);
         }
     }
 }
